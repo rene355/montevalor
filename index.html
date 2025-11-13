@@ -5,28 +5,79 @@
     <title>Montevalor</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-family: "Aptos", Arial, sans-serif;
+            background: linear-gradient(135deg, #0F4761, #1B6C89);
+            color: white;
             text-align: center;
-            background: #f5f5f5;
-            padding: 40px;
         }
+
+        .container {
+            max-width: 600px;
+            margin: 120px auto;
+            padding: 20px;
+        }
+
         img {
-            max-width: 300px;
+            max-width: 250px;
             height: auto;
+            margin-bottom: 30px;
         }
+
+        h1 {
+            font-size: 34px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            font-weight: 300;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
         .contact {
-            margin-top: 20px;
+            margin-top: 40px;
             font-size: 20px;
-            color: #333;
+            font-weight: 500;
+        }
+
+        .email-box {
+            margin-top: 10px;
+            font-size: 22px;
+            background: rgba(255,255,255,0.15);
+            padding: 12px 20px;
+            display: inline-block;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 500px) {
+            .container { margin: 60px 20px; }
+            h1 { font-size: 26px; }
+            p { font-size: 16px; }
         }
     </style>
 </head>
 <body>
 
-    <img src="image.jpg" alt="Montevalor logo">
+    <div class="container">
 
-    <div class="contact">
-        info(@)montevalor.nl
+        <!-- Logo -->
+        <img src="logo.jpg" alt="Montevalor logo">
+
+        <!-- Titel -->
+        <h1>Montevalor</h1>
+        <p>
+            Onze website wordt binnenkort gelanceerd.<br>
+            Wij werken achter de schermen aan iets moois.
+        </p>
+
+        <!-- Contact -->
+        <div class="contact">Contact</div>
+        <div class="email-box">info(@)montevalor.nl</div>
+
     </div>
 
 </body>
