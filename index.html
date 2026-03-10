@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,82 +9,135 @@
 
 <title>Montevalor</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
+
+*{
+box-sizing:border-box;
+}
 
 body{
 margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:linear-gradient(135deg,#0f4761,#1B6C89);
+font-family:'Inter',sans-serif;
+background:#0c1c2b;
 color:white;
+line-height:1.6;
+}
+
+nav{
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(10px);
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:10;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:15px;
+opacity:0.9;
+}
+
+nav a:hover{
+opacity:1;
+}
+
+.logo-nav{
+height:35px;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
+padding:40px;
+background:linear-gradient(135deg,#0f4761,#1B6C89);
 }
 
-header{
-padding:80px 20px;
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+letter-spacing:3px;
 }
 
-.logo{
-max-width:220px;
-height:auto;
-margin-bottom:30px;
+.hero p{
+font-size:22px;
+opacity:0.9;
 }
 
 .container{
-max-width:1000px;
+max-width:1100px;
 margin:auto;
-padding:40px 20px;
-}
-
-h1{
-font-size:42px;
-margin-bottom:10px;
-letter-spacing:2px;
+padding:100px 30px;
 }
 
 h2{
-margin-top:60px;
-margin-bottom:20px;
-font-size:32px;
-color:#ffffff;
-}
-
-p{
-font-size:18px;
-line-height:1.6;
-opacity:0.9;
+font-size:36px;
+margin-bottom:25px;
+color:#3fc1ff;
 }
 
 .services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
-margin-top:30px;
+margin-top:40px;
 }
 
 .card{
-background:rgba(0,0,0,0.2);
-padding:30px;
+background:#12283b;
+padding:35px;
 border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+background:#16344c;
 }
 
 .card h3{
 margin-top:0;
+color:#3fc1ff;
 }
 
-ul{
-list-style:none;
-padding:0;
+.focus{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
 }
 
-li{
-margin-bottom:10px;
+.focus-box{
+background:#12283b;
+padding:35px;
+border-radius:10px;
 }
 
 footer{
-margin-top:60px;
-padding:30px;
+background:#08131c;
+text-align:center;
+padding:40px;
 font-size:14px;
 opacity:0.7;
+}
+
+.contact{
+text-align:center;
+font-size:18px;
+}
+
+.logo-center{
+max-width:200px;
+margin-bottom:30px;
 }
 
 </style>
@@ -93,37 +147,60 @@ opacity:0.7;
 <body>
 
 
-<header>
 
-<img src="logo.jpg" alt="Montevalor strategic investment advisory logo" class="logo">
+<nav>
+
+<img src="logo.jpg" class="logo-nav">
+
+<div>
+
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#focus">Investment Focus</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+
+
+<section class="hero">
+
+<div>
+
+<img src="logo.jpg" alt="Montevalor logo" class="logo-center">
 
 <h1>Montevalor</h1>
 
-<p>
-Strategic Investments & Advisory
-</p>
+<p>Strategic Investments & Advisory</p>
 
-</header>
+</div>
+
+</section>
 
 
 
-<div class="container">
-
+<section id="about" class="container">
 
 <h2>About</h2>
 
 <p>
 
-Montevalor is a strategic investment and advisory platform focused on
-real estate, corporate structuring and long-term asset development.
+Montevalor is a strategic investment and advisory platform focused on real estate,
+corporate structuring and long-term asset development.
 
-The company supports international business initiatives,
-investment strategies and property development projects
-across Europe and other global markets.
+The company supports entrepreneurs, investors and businesses with strategic
+consultancy, international structuring and investment initiatives across Europe
+and other global markets.
 
 </p>
 
+</section>
 
+
+
+<section id="services" class="container">
 
 <h2>Services</h2>
 
@@ -132,8 +209,8 @@ across Europe and other global markets.
 <div class="card">
 <h3>Strategic Consultancy</h3>
 <p>
-Advisory services for entrepreneurs and companies
-in strategy, corporate structuring and business development.
+Advisory services for entrepreneurs and companies regarding
+corporate strategy, structuring and international expansion.
 </p>
 </div>
 
@@ -148,60 +225,81 @@ of real estate assets and property investment projects.
 <div class="card">
 <h3>Asset Utilisation</h3>
 <p>
-Operational use of movable assets such as
-vehicles, vessels and business equipment.
+Operational use and leasing of movable assets such as
+vehicles, vessels and equipment for business activities.
 </p>
 </div>
 
 <div class="card">
 <h3>Digital Platforms</h3>
 <p>
-Development of digital tools and platforms supporting
-consultancy and investment activities.
+Development and management of digital tools supporting
+consultancy and investment initiatives.
 </p>
 </div>
 
 </div>
 
+</section>
 
+
+
+<section id="focus" class="container">
 
 <h2>Investment Focus</h2>
 
+<div class="focus">
+
+<div class="focus-box">
+<h3>Real Estate</h3>
 <p>
-Montevalor focuses on long-term asset development and strategic investments,
-primarily within the following sectors:
+Strategic property investment, development and asset management
+with a focus on long-term value creation.
 </p>
+</div>
 
-<ul>
+<div class="focus-box">
+<h3>Corporate Structuring</h3>
+<p>
+Support for international corporate structures,
+investment vehicles and strategic partnerships.
+</p>
+</div>
 
-<li>Real estate investment and development</li>
+<div class="focus-box">
+<h3>Strategic Investments</h3>
+<p>
+Participation in long-term ventures and investment initiatives
+aligned with sustainable asset development.
+</p>
+</div>
 
-<li>Corporate advisory and international structuring</li>
+</div>
 
-<li>Strategic partnerships and venture initiatives</li>
-
-</ul>
+</section>
 
 
+
+<section id="contact" class="container contact">
 
 <h2>Contact</h2>
 
 <p>
 
-For business inquiries please contact:
+For business inquiries:
 
 <br><br>
 
 <strong>Montevalor</strong>
 
-<br>
+<br><br>
 
 info@montevalor.com
 
 </p>
 
+</section>
 
-</div>
 
 
 <footer>
@@ -211,11 +309,7 @@ Montevalor © 2026
 </footer>
 
 
+
 </body>
 
 </html>
-
-
-
-
-
