@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Montevalor</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{box-sizing:border-box;}
+
+body{
+margin:0;
+font-family:'Inter',sans-serif;
+background:#1a0f08;
+color:white;
+line-height:1.6;
+}
+
+nav{
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(10px);
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:10;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:15px;
+opacity:0.9;
+}
+
+nav a:hover{opacity:1;}
+
+.logo-nav{height:35px;}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px;
+background:linear-gradient(135deg,#ff6a00,#ff8c42);
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+letter-spacing:3px;
+}
+
+.hero p{
+font-size:22px;
+opacity:0.9;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:100px 30px;
+}
+
+h2{
+font-size:36px;
+margin-bottom:25px;
+color:#ff8c42;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:#2b1a10;
+padding:35px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+background:#3a2315;
+}
+
+.card h3{
+margin-top:0;
+color:#ff8c42;
+}
+
+.focus{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.focus-box{
+background:#2b1a10;
+padding:35px;
+border-radius:10px;
+}
+
+footer{
+background:#140a05;
+text-align:center;
+padding:40px;
+font-size:14px;
+opacity:0.7;
+}
+
+.contact{text-align:center;font-size:18px;}
+
+.logo-center{
+max-width:200px;
+margin-bottom:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<img src="logo.jpg" class="logo-nav">
+<div>
+<a href="#about">Over</a>
+<a href="#services">Diensten</a>
+<a href="#focus">Focus</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+
+<div>
+
+<img src="logo.jpg" alt="Montevalor logo" class="logo-center">
+
+<h1>Montevalor</h1>
+
+<p>Strategische Investeringen & Advies</p>
+
+</div>
+
+</section>
+
+<section id="about" class="container">
+
+<h2>Over Montevalor</h2>
+
+<p>
+
+Montevalor is een strategisch investerings- en adviesplatform gericht op vastgoed,
+corporate structuring en lange termijn waardeontwikkeling.
+
+Montevalor fungeert als overkoepelend platform voor verschillende
+investerings- en adviesactiviteiten. In Spanje worden deze activiteiten uitgevoerd
+via de verbonden vennootschap <strong>FHAM Azul S.L.</strong>, die optreedt als
+operationele entiteit voor consultancy, vastgoedprojecten en aanverwante activiteiten.
+
+Binnen deze structuur biedt Montevalor het strategische kader voor investeringen,
+samenwerkingen en internationale ontwikkeling, terwijl FHAM Azul S.L. verantwoordelijk is
+voor de uitvoering binnen de Spaanse markt.
+
+</p>
+
+</section>
+
+<section id="services" class="container">
+
+<h2>Diensten</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Strategisch Advies</h3>
+<p>Advies aan ondernemers en bedrijven op het gebied van strategie,
+structurering en internationale groei.</p>
+</div>
+
+<div class="card">
+<h3>Vastgoedactiviteiten</h3>
+<p>Aankoop, ontwikkeling, promotie en beheer van vastgoed en investeringsprojecten.</p>
+</div>
+
+<div class="card">
+<h3>Exploitatie van Activa</h3>
+<p>Inzet en verhuur van bedrijfsmiddelen zoals voertuigen,
+vaartuigen en operationele assets.</p>
+</div>
+
+<div class="card">
+<h3>Digitale Platformen</h3>
+<p>Ontwikkeling van digitale oplossingen ter ondersteuning van
+advies- en investeringsactiviteiten.</p>
+</div>
+
+</div>
+
+<p style="margin-top:40px; opacity:0.8; font-size:16px;">
+De activiteiten in Spanje worden uitgevoerd via <strong>FHAM Azul S.L.</strong>.
+</p>
+
+</section>
+
+<section id="focus" class="container">
+
+<h2>Investeringsfocus</h2>
+
+<div class="focus">
+
+<div class="focus-box">
+<h3>Vastgoed</h3>
+<p>Strategische investeringen in vastgoed met focus op lange termijn waarde.</p>
+</div>
+
+<div class="focus-box">
+<h3>Structurering</h3>
+<p>Internationale bedrijfsstructuren en investeringsvehikels.</p>
+</div>
+
+<div class="focus-box">
+<h3>Strategische Investeringen</h3>
+<p>Participaties in projecten en ondernemingen met duurzame groei.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="container contact">
+
+<h2>Contact</h2>
+
+<p>
+
+Voor zakelijke aanvragen:
+
+<br><br>
+
+<strong>Montevalor</strong>
+
+<br><br>
+
+info@montevalor.nl
+
+</p>
+
+</section>
+
+<footer>
+
+Montevalor © 2026
+
+<p style="opacity:0.6; font-size:13px;">
+Operationele activiteiten in Spanje via FHAM Azul S.L.
+</p>
+
+</footer>
+
+</body>
+</html>
