@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 26.7.1//EN
+N:van't Hooft;René;;;
+FN:René van't Hooft
+ORG:Kuiper Verzekeringen;
+TITLE:Account Manager Recreatie
+EMAIL;TYPE=INTERNET;TYPE=WORK;TYPE=pref:r.vanthooft@kuiperverzekeringen.nl
+TEL;TYPE=IPHONE;TYPE=CELL;TYPE=VOICE;TYPE=pref:+31 6 19 95 91 64
+ADR;TYPE=WORK;TYPE=pref:;;Breedpad 21;Heerenveen;;8442 AA;Nederland
+X-SOCIALPROFILE;TYPE=linkedin:http://www.linkedin.com/in/renevanthooft
+item1.URL;TYPE=pref:http://www.kuiperverzekeringen.nl
+item1.X-ABLabel:Website
+BDAY:1970-01-16
+END:VCARD
